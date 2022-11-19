@@ -20,9 +20,9 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 
 	va_start(al, n);
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n; i++){
 		sum += va_arg(al, int);
-
+	}
 	va_end(al);
 	return (sum);
 }
